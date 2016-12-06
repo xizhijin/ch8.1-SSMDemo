@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 类型别名 -->
+	<typeAliases>
+		<typeAlias alias="role" type="com.eric.mybatis.ch8.pojo.Role" />
+		<typeAlias alias="user" type="com.eric.mybatis.ch8.pojo.User" />
+	</typeAliases>
+	
+	<!-- POJO Mapper -->
+	<mappers>
+		<mapper resource="com\eric\mybatis\ch8\daoMapper\userDaoMapper.xml" />
+		<mapper resource="com\eric\mybatis\ch8\daoMapper\roleDaoMapper.xml" />
+	</mappers>
+</configuration>
